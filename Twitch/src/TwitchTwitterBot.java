@@ -58,7 +58,7 @@ public class TwitchTwitterBot {
    		Twitter twitter = tf.getInstance();
   		
    		//Credentials
-	   	Scanner cred = new Scanner(new File ("LucidRage3cred.txt"));
+	   	Scanner cred = new Scanner(new File ("cred.txt"));
 	   	String consumerKey = cred.nextLine();
 	   	String consumerSecret = cred.nextLine();
 	   	String accessToken = cred.nextLine();
@@ -91,15 +91,6 @@ public class TwitchTwitterBot {
 	    		System.out.println("");
 	    	}
 	    }
-
-//Create Reply
-	    //String Reply = User + " Streaming PUBG Live! Come say hi to us :) we appreciate the love! https://www.twitch.tv/lucidrage3";
-		
-//Update Status with Reply to Related Tweet User
-		//StatusUpdate statusUpdate = new StatusUpdate(Reply);
-		//Status status = twitter.updateStatus(statusUpdate);
-	    //System.out.println("Reply : " + Reply);
-	    //System.out.println("Status Reply : " + status.getText());
 	    
 	   return User; //exit
     } 
