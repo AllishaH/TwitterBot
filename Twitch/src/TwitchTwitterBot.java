@@ -73,6 +73,7 @@ public class TwitchTwitterBot {
 	    String relatedTweet = "";
 	    String User = "";
 	    while ((relatedTweet == "") || (relatedTweet.contains("..."))) {
+//Change #twitch to whatever hashtag you'd like to target
 	    	Query queryTweet = new Query("#twitch");
 	    	queryTweet.count(1);
 	    	QueryResult resultTweet = twitter.search(queryTweet);
